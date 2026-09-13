@@ -12,19 +12,21 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      BASE_URL: /dsp-course
-    steps:
-      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v6
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
         with:
           python-version: "3.10"
           cache: pip
 
-      - uses: actions/setup-node@v7
+      - name: Setup Node
+        uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version: 24
           package-manager-cache: false
 
       - name: Install Python dependencies
@@ -37,30 +39,69 @@ jobs:
           npm --version
           jupyter-book --version
 
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
       - name: Install LaTeX
         run: |
           sudo apt-get update
-          sudo apt-get install -y texlive-xetex texlive-fonts-recommended \
-            texlive-latex-extra latexmk
+          sudo apt-get install -y \
+            texlive-xetex \
+            texlive-fonts-recommended \
+            texlive-latex-extra \
+            latexmk
 
-      - name: Build static HTML site
-        run: jupyter-book build --html --ci
+      # --------------------------------------------------------
+      # PDF
+      # --------------------------------------------------------
 
       - name: Build study PDFs
         run: |
-          mkdir -p _build/html/pdfs
-          jupyter-book build estudo_1/relatorio_estudo_1.md --pdf --force --ci \
-            --output _build/html/pdfs/estudo_1.pdf
+          jupyter-book build estudo_1/relatorio_estudo_1.md \
+            --pdf \
+            --force \
+            --ci \
+            --output _build/exports/estudo_1.pdf
 
-      - uses: actions/upload-pages-artifact@v4
+      # --------------------------------------------------------
+      # HTML
+      # --------------------------------------------------------
+
+      - name: Build static HTML site
+        env:
+          BASE_URL: /dsp-course
+        run: |
+          rm -rf _build/html
+          jupyter-book build --html --ci
+
+      # --------------------------------------------------------
+      # Add PDFs to the website
+      # --------------------------------------------------------
+
+      - name: Copy study PDFs
+        run: |
+          mkdir -p _build/html/pdfs
+          cp _build/exports/estudo_1.pdf _build/html/pdfs/
+
+      # --------------------------------------------------------
+      # GitHub Pages
+      # --------------------------------------------------------
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
         with:
           path: _build/html
 
   deploy:
     needs: build
+
     runs-on: ubuntu-latest
+
     environment:
       name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
-      - uses: actions/deploy-pages@v4
-      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
