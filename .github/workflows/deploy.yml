@@ -42,7 +42,7 @@ jobs:
             texlive-latex-extra latexmk
 
       - name: Build static HTML site
-        run: jupyter-book build --html --ci --output _build/site
+        run: jupyter-book build --html --ci
 
       - name: Build study PDFs
         run: |
