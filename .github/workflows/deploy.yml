@@ -1,0 +1,54 @@
+name: Deploy Jupyter Book to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-xetex texlive-fonts-recommended \
+            texlive-latex-extra latexmk
+
+      - name: Build static HTML site
+        run: jupyter-book build --html --output _build/site
+
+      - name: Build study PDFs
+        run: |
+          mkdir -p _build/site/pdfs
+          jupyter-book build estudo_1/relatorio_estudo_1.md --pdf --force \
+            --output _build/site/pdfs/estudo_1.pdf
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _build/site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/deploy-pages@v4

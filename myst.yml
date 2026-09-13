@@ -1,0 +1,31 @@
+version: 1
+
+project:
+  id: f1769155-06a0-488a-aa8b-2d0f943a9fbf
+
+  title: Processamento Digital de Sinais
+  description: Agregador dos estudos, tópicos, simulações e PDFs da disciplina
+  keywords: [Sinais, Discretos, Contínuos, DSP]
+  authors:
+    - Marcos Belo
+    - Jefferson Amorim
+
+  toc:
+    - file: README.md
+    - file: estudo_1/index.md
+      children:
+        - file: estudo_1/sinais_discretos/relatorio_sinais_discretos.md
+
+  settings:
+    myst_to_tex:
+      code_style: listings
+    output_stdout: show
+    output_stderr: remove
+    output_matplotlib_strings: remove
+
+site:
+  template: book-theme
+  options:
+    logo_text: DSP - IFPB
+    style: _static/site.css
+    outline_maxdepth: 3
