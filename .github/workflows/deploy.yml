@@ -12,6 +12,8 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      BASE_URL: /dsp-course
     steps:
       - uses: actions/checkout@v7
 
