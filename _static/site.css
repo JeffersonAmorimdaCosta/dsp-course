@@ -1,21 +1,33 @@
+/* ===== Tema claro (padrão) ===== */
 :root {
-  --dsp-ink: #18212f;
-  --dsp-muted: #5d6878;
-  --dsp-surface: #ffffff;
-  --dsp-surface-soft: #f6f8fb;
-  --dsp-line: #d9e0ea;
-  --dsp-blue: #185abc;
-  --dsp-cyan: #007c89;
-  --dsp-green: #27845a;
-  --dsp-yellow: #f2b705;
-  --dsp-code-bg: #f3f6fa;
+  /* Mapeamento para tokens do MyST – usados como fallback */
+  --dsp-ink: var(--myst-color-prose-body, #18212f);
+  --dsp-muted: var(--myst-color-text-secondary, #5d6878);
+  --dsp-surface: var(--myst-color-surface, #ffffff);
+  --dsp-surface-soft: var(--myst-color-bg-secondary, #f6f8fb);
+  --dsp-line: var(--myst-color-border, #d9e0ea);
+  --dsp-blue: var(--myst-color-info-text, #185abc);
+  --dsp-cyan: var(--myst-color-accent-text, #007c89);
+  --dsp-code-bg: var(--myst-color-bg, #f3f6fa);
+
   --myst-font-body: "Inter", "Segoe UI", system-ui, sans-serif;
   --myst-font-heading: "Inter", "Segoe UI", system-ui, sans-serif;
   --myst-font-monospace: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
-  --myst-color-primary: var(--dsp-blue);
-  --myst-color-accent: var(--dsp-cyan);
 }
 
+/* ===== Tema escuro (quando MyST adiciona .dark) ===== */
+.dark {
+  --dsp-ink: var(--myst-color-prose-body, #e8eef7);
+  --dsp-muted: var(--myst-color-text-secondary, #a9b4c4);
+  --dsp-surface: var(--myst-color-surface, #111827);
+  --dsp-surface-soft: var(--myst-color-bg-secondary, #0b1120);
+  --dsp-line: var(--myst-color-border, #263244);
+  --dsp-blue: var(--myst-color-info-text, #7fb0ff);
+  --dsp-cyan: var(--myst-color-accent-text, #5eead4);
+  --dsp-code-bg: var(--myst-color-bg, #172033);
+}
+
+/* ===== Regras que usam as variáveis ===== */
 html {
   background: var(--dsp-surface-soft);
 }
@@ -27,136 +39,60 @@ body {
     var(--dsp-surface-soft);
 }
 
-a {
-  color: var(--dsp-blue);
-  text-decoration-thickness: 0.08em;
-  text-underline-offset: 0.18em;
-}
+a { color: var(--dsp-blue); }
+a:hover { color: var(--dsp-cyan); }
 
-a:hover {
-  color: var(--dsp-cyan);
-}
-
-h1,
-h2,
-h3,
-h4 {
-  color: var(--dsp-ink);
-  letter-spacing: 0;
-}
+h1, h2, h3, h4 { color: var(--dsp-ink); }
 
 h1 {
   border-bottom: 1px solid var(--dsp-line);
   padding-bottom: 0.45rem;
 }
 
-h2 {
-  margin-top: 2.2rem;
-}
-
 main article {
   background: var(--dsp-surface);
   border: 1px solid var(--dsp-line);
-  border-radius: 8px;
   box-shadow: 0 16px 42px rgba(24, 33, 47, 0.07);
-  padding: clamp(1rem, 2vw, 2rem);
 }
 
+/* Tabelas */
 table {
   border: 1px solid var(--dsp-line);
-  border-collapse: separate;
-  border-radius: 8px;
-  border-spacing: 0;
-  overflow: hidden;
 }
-
 thead {
-  background: #eaf2ff;
+  background: var(--myst-color-bg-secondary);
 }
-
 th {
-  color: #12325f;
+  color: var(--dsp-ink);
   font-weight: 700;
 }
-
-th,
-td {
-  border-color: var(--dsp-line);
-  vertical-align: top;
-}
-
 tbody tr:nth-child(even) {
-  background: #f8fafc;
+  background: var(--myst-color-bg-secondary);
 }
 
-code,
-pre {
-  font-family: var(--myst-font-monospace);
-}
-
+/* Código */
 code {
   background: var(--dsp-code-bg);
-  border: 1px solid #e1e7ef;
-  border-radius: 4px;
-  color: #24364f;
-  padding: 0.08rem 0.28rem;
+  border: 1px solid var(--dsp-line);
+  color: var(--dsp-ink);
 }
-
 pre {
-  background: #101827;
+  background: var(--myst-color-bg);
+  color: var(--myst-color-prose-body);
   border-radius: 8px;
 }
-
 pre code {
   background: transparent;
   border: 0;
   color: inherit;
-  padding: 0;
 }
 
+/* Citações e outros */
 blockquote {
   border-left: 4px solid var(--dsp-cyan);
-  background: #eefafa;
-  color: #24444a;
-  border-radius: 0 8px 8px 0;
+  background: var(--myst-color-bg-secondary);
+  color: var(--dsp-ink);
 }
-
-.math,
-.MathJax {
-  color: #12213a;
-}
-
-nav a[aria-current="page"],
-nav a.active {
-  color: var(--dsp-blue);
-  font-weight: 700;
-}
-
-aside,
-nav {
-  scrollbar-color: #aab8cb transparent;
-}
-
-button,
-[role="button"] {
-  border-radius: 6px;
-}
-
-hr {
-  border-color: var(--dsp-line);
-}
-
-@media (max-width: 720px) {
-  main article {
-    border-left: 0;
-    border-right: 0;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 1rem;
-  }
-
-  table {
-    display: block;
-    overflow-x: auto;
-  }
+.math, .MathJax {
+  color: var(--myst-color-prose-body);
 }
