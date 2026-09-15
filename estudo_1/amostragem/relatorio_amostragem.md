@@ -2,7 +2,7 @@
 
 ---
 
-## Resumo conceitual
+# Resumo conceitual
 
 A amostragem é o processo de medir um sinal contínuo em instantes de tempo regularmente espaçados. Em um sistema de aquisição, o sinal físico existe continuamente no tempo, mas o equipamento registra apenas determinados valores desse sinal. Esses valores são chamados de **amostras** e formam uma sequência discreta.
 
@@ -10,17 +10,17 @@ Fisicamente, portanto, a amostragem transforma uma grandeza que pode variar cont
 
 A frequência de amostragem $f_s$ indica quantas amostras são obtidas por segundo. Quanto maior for $f_s$, menor será o intervalo entre duas amostras e mais detalhada será a representação temporal do sinal.
 
-Para que um sinal possa ser reconstruído adequadamente a partir de suas amostras, é necessário respeitar o **critério de Nyquist-Shannon**. Para um sinal cuja maior frequência é $f_{\max}$, utiliza-se, idealmente,
+Para que um sinal possa ser reconstruído adequadamente a partir de suas amostras, é necessário respeitar o **critério de Nyquist-Shannon**. Para um sinal cuja largura de banda é $B$, utiliza-se, idealmente,
 
 $$
-f_s > 2f_{\max}.
+f_s > 2B
 $$
 
 Quando essa condição é violada, pode ocorrer **aliasing**, isto é, uma distorção na representação da frequência.
 
 ---
 
-## Formulação matemática
+# Formulação matemática
 
 O processo de amostragem uniforme é representado por:
 
@@ -82,7 +82,7 @@ $$
 
 ---
 
-## Exemplo
+# Exemplo
 
 Considere o sinal contínuo
 
@@ -92,7 +92,7 @@ $$
 
 observado durante $1$ segundo. Serão analisadas três frequências de amostragem: $20\,\text{Hz}$, $10\,\text{Hz}$ e $6\,\text{Hz}$.
 
-### Frequência de amostragem de $20\,\text{Hz}$
+## Frequência de amostragem de $20\,\text{Hz}$
 
 Para $f_s = 20\,\text{Hz}$, temos:
 
@@ -108,7 +108,7 @@ $$
 f_s > 2f_0.
 $$
 
-### Frequência de amostragem de $10\,\text{Hz}$
+## Frequência de amostragem de $10\,\text{Hz}$
 
 Para $f_s = 10\,\text{Hz}$, temos:
 
@@ -124,7 +124,7 @@ $$
 f_s = 2f_0.
 $$
 
-### Frequência de amostragem de $6\,\text{Hz}$
+## Frequência de amostragem de $6\,\text{Hz}$
 
 Para $f_s = 6\,\text{Hz}$, temos:
 
@@ -148,7 +148,7 @@ Com $f_s = 6\,\text{Hz}$, são obtidas apenas $1{,}2$ amostras por período. A t
 
 ---
 
-## Simulação computacional
+# Simulação computacional
 
 A simulação abaixo gera numericamente o sinal senoidal e calcula suas amostras para três valores diferentes de frequência de amostragem. O sinal contínuo é representado por uma malha temporal muito densa, enquanto os valores discretos são obtidos pela equação
 
@@ -161,7 +161,7 @@ $$
 
 ---
 
-## Resultados
+# Resultados
 
 Os resultados numéricos esperados para as três condições podem ser resumidos na tabela a seguir.
 
@@ -177,7 +177,7 @@ Para $f_s = 20\,\text{Hz}$, a sequência possui quatro pontos por ciclo. Para $f
 
 ---
 
-## Discussão
+# Discussão
 
 A simulação demonstra que $T_s$ e $f_s$ possuem uma relação inversamente proporcional. Quando a frequência de amostragem passa de $20\,\text{Hz}$ para $10\,\text{Hz}$, o período de amostragem aumenta de $0{,}05\,\text{s}$ para $0{,}10\,\text{s}$. Ao utilizar $6\,\text{Hz}$, o período aumenta para aproximadamente $0{,}1667\,\text{s}$.
 
