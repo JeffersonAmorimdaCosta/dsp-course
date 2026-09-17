@@ -16,6 +16,7 @@ project:
       children:
         - file: estudo_1/sinais_discretos/relatorio_sinais_discretos.md
         - file: estudo_1/amostragem/relatorio_amostragem.md
+        - file: estudo_1/quantizacao_resolucao/relatorio_quantizacao_resolucao.md
 
   settings:
     myst_to_tex:
