@@ -11,10 +11,16 @@ Este estudo reune os topicos introdutorios sobre sinais discretos, incluindo fun
 ```{list-table}
 :header-rows: 1
 
-* - Topico
-  - Conteudo
-* - [Sinais continuos e discretos](sinais_discretos/relatorio_sinais_discretos.md)
-  - Resumo conceitual, formulacao matematica, exemplo, simulacao, resultados e discussao.
+* - Tópico
+  - Conteúdo
+* - [Sinais contínuos e discretos](sinais_discretos/relatorio_sinais_discretos.md)
+  - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
+* - [Amostragem de Sinais Contínuos](amostragem/relatorio_amostragem.md)
+  - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
+* - [Quantização e Resolução](quantizacao_resolucao/relatorio_quantizacao_resolucao.md)
+  - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
+* - [Operações com Sinais](operacoes_sinais/relatorio_operacoes_sinais.md)
+  - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
 ```
 
 ## PDF do estudo
