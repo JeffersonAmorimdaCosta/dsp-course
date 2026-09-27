@@ -21,6 +21,8 @@ Este estudo reune os topicos introdutorios sobre sinais discretos, incluindo fun
   - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
 * - [Operações com Sinais](operacoes_sinais/relatorio_operacoes_sinais.md)
   - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
+* - [Energia e Potência](energia_potencia/relatorio_energia_potencia.md)
+  - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
 ```
 
 ## PDF do estudo

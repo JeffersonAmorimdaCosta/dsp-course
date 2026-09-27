@@ -18,6 +18,7 @@ project:
         - file: estudo_1/amostragem/relatorio_amostragem.md
         - file: estudo_1/quantizacao_resolucao/relatorio_quantizacao_resolucao.md
         - file: estudo_1/operacoes_sinais/relatorio_operacoes_sinais.md
+        - file: estudo_1/energia_potencia/relatorio_energia_potencia.md
 
   settings:
     myst_to_tex:
