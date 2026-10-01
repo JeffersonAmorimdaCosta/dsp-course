@@ -19,6 +19,7 @@ project:
         - file: estudo_1/quantizacao_resolucao/relatorio_quantizacao_resolucao.md
         - file: estudo_1/operacoes_sinais/relatorio_operacoes_sinais.md
         - file: estudo_1/energia_potencia/relatorio_energia_potencia.md
+        - file: estudo_1/sistemas_discretos/relatorio_sistemas_discretos.md
 
   settings:
     myst_to_tex:
