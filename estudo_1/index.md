@@ -11,10 +11,26 @@ Este estudo reune os topicos introdutorios sobre sinais discretos, incluindo fun
 ```{list-table}
 :header-rows: 1
 
-* - Topico
-  - Conteudo
-* - [Sinais continuos e discretos](sinais_discretos/relatorio_sinais_discretos.md)
-  - Resumo conceitual, formulacao matematica, exemplo, simulacao, resultados e discussao.
+* - Tópico
+  - Conteúdo
+* - [Sinais contínuos e discretos](sinais_discretos/relatorio_sinais_discretos.md)
+  - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
+* - [Amostragem de Sinais Contínuos](amostragem/relatorio_amostragem.md)
+  - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
+* - [Quantização e Resolução](quantizacao_resolucao/relatorio_quantizacao_resolucao.md)
+  - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
+* - [Operações com Sinais](operacoes_sinais/relatorio_operacoes_sinais.md)
+  - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
+* - [Energia e Potência](energia_potencia/relatorio_energia_potencia.md)
+  - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
+* - [Sistemas Discretos](sistemas_discretos/relatorio_sistemas_discretos.md)
+  - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
+* - [Sistemas LTI](sistemas_lti/relatorio_sistemas_lti.md)
+  - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
+* - [Convolução Discreta](convolucao_discreta/relatorio_convolucao_discreta.md)
+  - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
+* - [Convolução como Filtragem](convolucao_filtragem/relatorio_convolucao_filtragem.md)
+  - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
 ```
 
 ## PDF do estudo

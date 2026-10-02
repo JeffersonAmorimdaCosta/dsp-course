@@ -18,6 +18,12 @@ project:
         - file: estudo_1/amostragem/relatorio_amostragem.md
         - file: estudo_1/quantizacao_resolucao/relatorio_quantizacao_resolucao.md
         - file: estudo_1/sequencias_fundamentais/relatorio_sequencias_fundamentais.md
+        - file: estudo_1/operacoes_sinais/relatorio_operacoes_sinais.md
+        - file: estudo_1/energia_potencia/relatorio_energia_potencia.md
+        - file: estudo_1/sistemas_discretos/relatorio_sistemas_discretos.md
+        - file: estudo_1/sistemas_lti/relatorio_sistemas_lti.md
+        - file: estudo_1/convolucao_discreta/relatorio_convolucao_discreta.md
+        - file: estudo_1/convolucao_filtragem/relatorio_convolucao_filtragem.md
 
   settings:
     myst_to_tex:
