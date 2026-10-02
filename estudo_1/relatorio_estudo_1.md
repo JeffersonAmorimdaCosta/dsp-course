@@ -48,3 +48,6 @@ Esta Parte 1 estuda a representação e o processamento de sinais discretos. Os 
 ## Conclusões da Parte 1
 
 A representação discreta exige escolhas coerentes de taxa de amostragem e resolução. As sequências fundamentais e as operações com sinais fornecem a base para descrever sistemas, enquanto a resposta ao impulso e a convolução permitem analisar o processamento por sistemas LTI. O mini projeto demonstra que a redução do ruído deve ser avaliada junto à distorção e ao atraso introduzidos pelo filtro.
+
+```{include} referencias/relatorio_referencias.md
+```
