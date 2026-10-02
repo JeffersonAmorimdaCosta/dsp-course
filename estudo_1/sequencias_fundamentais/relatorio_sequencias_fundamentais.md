@@ -12,7 +12,7 @@ O **degrau unitário** apresenta valor igual a um a partir do instante $n=0$ e z
 
 A **sequência exponencial** é caracterizada por valores que variam de acordo com uma potência da constante $a$. Dependendo do valor dessa constante, a sequência pode apresentar crescimento, decaimento, comportamento constante ou alternância de sinais.
 
-A **senoide discreta** é uma sequência periódica que pode ser utilizada para representar oscilações em sistemas discretos. Seu comportamento é determinado principalmente pela amplitude, frequência angular e fase.
+A **senoide discreta** é uma sequência oscilatória que pode ser utilizada para representar oscilações em sistemas discretos. Seu comportamento é determinado principalmente pela amplitude, frequência angular e fase.
 
 Por fim, a **exponencial complexa** constitui uma representação especialmente importante das senoides. Por meio da identidade de Euler, uma exponencial complexa pode ser escrita como uma combinação de uma senoide cossenoidal e uma senoide senoidal. Essa representação é fundamental para o estudo de ferramentas de análise espectral, como a Transformada de Fourier.
 
@@ -291,6 +291,8 @@ $$
 $$
 
 quando $f$ é expressa em ciclos por amostra.
+
+Uma senoide discreta de frequência não nula é periódica quando $\omega_0/(2\pi)$ é racional. Seu período fundamental é o menor inteiro positivo $N_0$ que satisfaz $\omega_0N_0=2\pi m$, com $m$ inteiro. Se essa razão for irracional, a sequência não é periódica.
 
 Uma característica importante das senoides discretas é que frequências angulares que diferem por múltiplos inteiros de $2\pi$ produzem a mesma sequência:
 
@@ -607,3 +609,15 @@ $$
 $$
 
 Esse exemplo demonstra de maneira direta a relação entre a exponencial complexa e as senoides. A possibilidade de representar sinais oscilatórios dessa maneira torna a exponencial complexa uma ferramenta essencial para a análise de sinais e sistemas discretos, especialmente no desenvolvimento da Transformada de Fourier.
+
+
+---
+
+## 4. Simulação computacional
+
+A simulação em Python utiliza NumPy para gerar as sequências e Matplotlib para representá-las com gráficos de hastes (`stem`), evidenciando que os sinais são definidos apenas para índices inteiros. A janela escolhida é $-5 \leq n \leq 20$; ela representa um trecho das sequências, não uma limitação de suas definições.
+
+O notebook a seguir apresenta a expressão matemática, os parâmetros, o código, o gráfico e a interpretação de cada sinal solicitado. Pode ser executado do início ao fim para reproduzir os resultados.
+
+:::: {include} ./simulacao/simulacao_sequencias_fundamentais.ipynb
+::::
