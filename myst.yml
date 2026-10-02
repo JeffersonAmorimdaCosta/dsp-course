@@ -11,7 +11,7 @@ project:
     - Jefferson Amorim
 
   toc:
-    - file: README.md
+    - file: estudo_1/README.md
     - file: estudo_1/index.md
       children:
         - file: estudo_1/sinais_discretos/relatorio_sinais_discretos.md

@@ -38,7 +38,3 @@ Este estudo reune os topicos introdutorios sobre sinais discretos, incluindo fun
 * - [Referências bibliográficas](referencias/relatorio_referencias.md)
   - Livros, material didático e documentação sobre sinais, sistemas e simulações.
 ```
-
-## PDF do estudo
-
-[Baixar PDF completo do Estudo 1](../pdfs/estudo_1.pdf)
