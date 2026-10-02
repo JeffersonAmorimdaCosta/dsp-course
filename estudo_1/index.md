@@ -29,6 +29,8 @@ Este estudo reune os topicos introdutorios sobre sinais discretos, incluindo fun
   - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
 * - [Convolução Discreta](convolucao_discreta/relatorio_convolucao_discreta.md)
   - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
+* - [Convolução como Filtragem](convolucao_filtragem/relatorio_convolucao_filtragem.md)
+  - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
 ```
 
 ## PDF do estudo

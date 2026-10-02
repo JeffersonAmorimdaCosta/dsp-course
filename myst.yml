@@ -22,6 +22,7 @@ project:
         - file: estudo_1/sistemas_discretos/relatorio_sistemas_discretos.md
         - file: estudo_1/sistemas_lti/relatorio_sistemas_lti.md
         - file: estudo_1/convolucao_discreta/relatorio_convolucao_discreta.md
+        - file: estudo_1/convolucao_filtragem/relatorio_convolucao_filtragem.md
 
   settings:
     myst_to_tex:
