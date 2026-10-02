@@ -27,6 +27,8 @@ Este estudo reune os topicos introdutorios sobre sinais discretos, incluindo fun
   - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
 * - [Sistemas LTI](sistemas_lti/relatorio_sistemas_lti.md)
   - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
+* - [Convolução Discreta](convolucao_discreta/relatorio_convolucao_discreta.md)
+  - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
 ```
 
 ## PDF do estudo
