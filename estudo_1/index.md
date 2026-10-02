@@ -19,6 +19,8 @@ Este estudo reune os topicos introdutorios sobre sinais discretos, incluindo fun
   - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
 * - [Quantização e Resolução](quantizacao_resolucao/relatorio_quantizacao_resolucao.md)
   - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
+* - [Sequências Fundamentais](sequencias_fundamentais/relatorio_sequencias_fundamentais.md)
+  - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
 * - [Operações com Sinais](operacoes_sinais/relatorio_operacoes_sinais.md)
   - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
 * - [Energia e Potência](energia_potencia/relatorio_energia_potencia.md)
@@ -31,6 +33,8 @@ Este estudo reune os topicos introdutorios sobre sinais discretos, incluindo fun
   - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
 * - [Convolução como Filtragem](convolucao_filtragem/relatorio_convolucao_filtragem.md)
   - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
+* - [Mini Projeto Integrador](mini_projeto/relatorio_mini_projeto.md)
+  - Cadeia de aquisição de vibração: amostragem, quantização, ruído, filtro LTI e comparação dos resultados.
 ```
 
 ## PDF do estudo

@@ -25,6 +25,8 @@ project:
         - file: estudo_1/convolucao_discreta/relatorio_convolucao_discreta.md
         - file: estudo_1/convolucao_filtragem/relatorio_convolucao_filtragem.md
 
+        - file: estudo_1/mini_projeto/relatorio_mini_projeto.md
+
   settings:
     myst_to_tex:
       code_style: listings
