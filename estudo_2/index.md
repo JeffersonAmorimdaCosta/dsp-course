@@ -17,4 +17,6 @@ Este estudo reune os topicos introdutorios sobre transformadas, incluindo fundam
   - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
 * - [Transformada de Fourier em Tempo Discreto (DTFT)](dtft/relatorio_dtft.md)
   - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
+* - [Transformada Discreta de Fourier (DFT)](dft/relatorio_dft.md)
+  - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
 ```

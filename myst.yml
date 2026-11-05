@@ -36,6 +36,7 @@ project:
       children:
         - file: estudo_2/frequencia_exponencial_complexa/relatorio_frequencia_exponencial_complexa.md
         - file: estudo_2/dtft/relatorio_dtft.md
+        - file: estudo_2/dft/relatorio_dft.md
 
   settings:
     myst_to_tex:
