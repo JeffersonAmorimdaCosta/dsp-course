@@ -15,4 +15,6 @@ Este estudo reune os topicos introdutorios sobre transformadas, incluindo fundam
   - Conteúdo
 * - [Frequência e Exponenciais Complexas](frequencia_exponencial_complexa/relatorio_frequencia_exponencial_complexa.md)
   - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
+* - [Transformada de Fourier em Tempo Discreto (DTFT)](dtft/relatorio_dtft.md)
+  - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
 ```
