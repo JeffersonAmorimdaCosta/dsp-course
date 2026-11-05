@@ -35,6 +35,8 @@ Este estudo reune os topicos introdutorios sobre sinais discretos, incluindo fun
   - Resumo conceitual, formulação matemática, exemplo, simulação, resultados e discussão.
 * - [Mini Projeto Integrador](mini_projeto/relatorio_mini_projeto.md)
   - Cadeia de aquisição de vibração: amostragem, quantização, ruído, filtro LTI e comparação dos resultados.
+* - [Relatório Consolidado](relatorio_estudo_1.md)
+  - Relatório completo sobre todo o conteúdo abordado no estudo 1.
 * - [Referências bibliográficas](referencias/relatorio_referencias.md)
   - Livros, material didático e documentação sobre sinais, sistemas e simulações.
 ```

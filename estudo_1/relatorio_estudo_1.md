@@ -1,5 +1,5 @@
 ---
-title: Estudo 1 - Sinais Discretos
+title: Relatório Completo
 ---
 
 # Estudo 1 - Sinais Discretos
