@@ -11,7 +11,8 @@ project:
     - Jefferson Amorim
 
   toc:
-    - file: estudo_1/README.md
+    - file: index.md
+
     - file: estudo_1/index.md
       children:
         - file: estudo_1/sinais_discretos/relatorio_sinais_discretos.md
@@ -27,6 +28,10 @@ project:
 
         - file: estudo_1/mini_projeto/relatorio_mini_projeto.md
         - file: estudo_1/referencias/relatorio_referencias.md
+    
+    - file: estudo_2/index.md
+      children:
+        - file: estudo_2/frequencia_exponencial_complexa/relatorio_frequencia_exponencial_complexa.md
 
   settings:
     myst_to_tex:
