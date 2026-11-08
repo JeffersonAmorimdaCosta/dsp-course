@@ -1,21 +1,82 @@
 ---
-title: Estudo 2 - Sinais Discretos
+title: Relatório Completo do Estudo 2
+exports:
+  - format: pdf
+    template: templates/relatorio
+    output: ../output/pdf/estudo_2.pdf
 ---
 
-# Estudo 2 - Transformadas
+# Estudo 2 — Análise de Sinais e Sistemas nos Domínios da Frequência e da Transformada
 
-**Disciplina:** Processamento Digital de Sinais  
-**Aluno(s):** Marcos Vinicius Belo da Silva, Jefferson Amorim da Costa  
-**Professor:** Moacy Pereira da Silva
+**Instituição:** Instituto Federal da Paraíba — IFPB\
+**Disciplina:** Processamento Digital de Sinais\
+**Professor:** Moacy Pereira da Silva\
+**Equipe:** Marcos Vinicius Belo da Silva e Jefferson Amorim da Costa
 
 ## Introdução
 
-Esta Parte 2 do estudo dirigido de Processamento Digital de Sinais, serão abordadas ferramentas matemáticas fundamentais para a análise de sinais e sistemas em diferentes domínios, com destaque para as Transformadas de Fourier, Laplace e Z. Serão estudados conceitos como análise espectral, DFT, FFT, resolução espectral, frequência de Nyquist, aliasing, janelamento, funções de transferência, polos, zeros e estabilidade de sistemas contínuos e discretos. Além disso, serão realizadas simulações computacionais utilizando Python ou GNU Octave e desenvolvido um mini projeto integrador, relacionando os conhecimentos teóricos e matemáticos a aplicações práticas da engenharia.
+Fourier, Laplace e Z conectam tempo, frequência e planos complexos. O estudo reúne os 18 tópicos do guia e uma aplicação de sensor industrial. Os resultados computacionais são reproduzíveis pelos notebooks incluídos. Os sinais dos projetos são sintéticos.
 
+```{include} frequencia_exponencial_complexa/relatorio_frequencia_exponencial_complexa.md
+```
+
+```{include} dtft/relatorio_dtft.md
+```
+
+```{include} dft/relatorio_dft.md
+```
+
+```{include} fft/relatorio_fft.md
+```
+
+```{include} resolucao_espectral/relatorio_resolucao_espectral.md
+```
+
+```{include} frequencia_normalizada/relatorio_frequencia_normalizada.md
+```
+
+```{include} nyquist/relatorio_nyquist.md
+```
+
+```{include} aliasing/relatorio_aliasing.md
+```
+
+```{include} janelamento/relatorio_janelamento.md
+```
+
+```{include} laplace/relatorio_laplace.md
+```
+
+```{include} funcao_transferencia/relatorio_funcao_transferencia.md
+```
+
+```{include} plano_s/relatorio_plano_s.md
+```
+
+```{include} transformada_z/relatorio_transformada_z.md
+```
+
+```{include} regiao_convergencia/relatorio_regiao_convergencia.md
+```
+
+```{include} transferencia_discreta/relatorio_transferencia_discreta.md
+```
+
+```{include} estabilidade_z/relatorio_estabilidade_z.md
+```
+
+```{include} z_dtft/relatorio_z_dtft.md
+```
+
+```{include} laplace_z/relatorio_laplace_z.md
+```
+
+```{include} mini_projeto/relatorio_mini_projeto.md
+```
 
 ## Conclusões da Parte 2
 
-Conclui-se que os conteúdos abordados nesta Parte 2 são fundamentais para compreender e analisar o comportamento de sinais e sistemas contínuos e discretos. Por meio do estudo das transformadas de Fourier, Laplace e Z, além das simulações computacionais, foi possível relacionar os conceitos teóricos às suas aplicações práticas no Processamento Digital de Sinais.
+A análise espectral distingue componentes sobrepostas no tempo, mas depende da duração do registro, da janela e da taxa de amostragem. Laplace e Z explicam a dinâmica e a estabilidade, sempre com as hipóteses de causalidade e convergência. O projeto do sensor evidencia que aquisição correta não elimina as limitações de banda do sistema.
 
 ```{include} referencias/relatorio_referencias.md
 ```

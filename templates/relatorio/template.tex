@@ -1,0 +1,32 @@
+% Adaptado de myst-templates/plain_latex, CC-BY-4.0, Steve Purves.
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{fontspec}
+\setmainfont{DejaVu Serif}
+\setmonofont{DejaVu Sans Mono}[Scale=0.9]
+\IfFileExists{brazil.ldf}{\usepackage[brazil]{babel}}{}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{natbib}
+\bibliographystyle{abbrvnat}
+[-IMPORTS-]
+\usepackage{listings}
+\lstdefinelanguage{undefined}{}
+\lstset{basicstyle=\ttfamily\footnotesize,breaklines=true,breakatwhitespace=false,columns=fullflexible,keepspaces=true,showstringspaces=false}
+\sloppy
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\let\incluirfiguraoriginal\includegraphics
+\renewcommand{\includegraphics}[2][]{\incluirfiguraoriginal[width=\linewidth,height=0.65\textheight,keepaspectratio]{#2}}
+\hypersetup{colorlinks=true,allcolors=blue}
+\title{[-doc.title-]}
+\author{[-doc.authors|join(" \\and ", "name")-]}
+\newcommand{\mesportugues}[1]{\ifcase#1\or janeiro\or fevereiro\or março\or abril\or maio\or junho\or julho\or agosto\or setembro\or outubro\or novembro\or dezembro\fi}
+\date{[-doc.date.day-] de \mesportugues{[-doc.date.month-]} de [-doc.date.year-]}
+\begin{document}
+\maketitle
+[-CONTENT-]
+[# if doc.bibliography #]
+\bibliography{[-doc.bibliography|join(", ")-]}
+[# endif #]
+\end{document}

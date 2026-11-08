@@ -1,0 +1,26 @@
+jtex: v1
+title: Relatório de Estudos de PDS
+description: Relatório em português com código e saídas de notebooks.
+version: 1.0.0
+license: CC-BY-4.0
+authors:
+  - name: Equipe PDS
+    affiliations:
+      - IFPB
+doc:
+  - id: title
+    required: true
+  - id: authors
+    required: true
+  - id: date
+  - id: bibliography
+files:
+  - template.tex
+packages:
+  - geometry
+  - fontspec
+  - babel
+  - hyperref
+  - graphicx
+  - natbib
+  - listings

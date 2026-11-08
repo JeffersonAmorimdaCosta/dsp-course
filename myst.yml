@@ -37,6 +37,44 @@ project:
         - file: estudo_2/frequencia_exponencial_complexa/relatorio_frequencia_exponencial_complexa.md
         - file: estudo_2/dtft/relatorio_dtft.md
         - file: estudo_2/dft/relatorio_dft.md
+        - file: estudo_2/fft/relatorio_fft.md
+        - file: estudo_2/resolucao_espectral/relatorio_resolucao_espectral.md
+        - file: estudo_2/frequencia_normalizada/relatorio_frequencia_normalizada.md
+        - file: estudo_2/nyquist/relatorio_nyquist.md
+        - file: estudo_2/aliasing/relatorio_aliasing.md
+        - file: estudo_2/janelamento/relatorio_janelamento.md
+        - file: estudo_2/laplace/relatorio_laplace.md
+        - file: estudo_2/funcao_transferencia/relatorio_funcao_transferencia.md
+        - file: estudo_2/plano_s/relatorio_plano_s.md
+        - file: estudo_2/transformada_z/relatorio_transformada_z.md
+        - file: estudo_2/regiao_convergencia/relatorio_regiao_convergencia.md
+        - file: estudo_2/transferencia_discreta/relatorio_transferencia_discreta.md
+        - file: estudo_2/estabilidade_z/relatorio_estabilidade_z.md
+        - file: estudo_2/z_dtft/relatorio_z_dtft.md
+        - file: estudo_2/laplace_z/relatorio_laplace_z.md
+        - file: estudo_2/mini_projeto/relatorio_mini_projeto.md
+        - file: estudo_2/relatorio_estudo_2.md
+        - file: estudo_2/referencias/relatorio_referencias.md
+    - file: estudo_3/README.md
+    - file: estudo_3/index.md
+      children:
+        - file: estudo_3/conceito_filtragem/relatorio_conceito_filtragem.md
+        - file: estudo_3/resposta_frequencia/relatorio_resposta_frequencia.md
+        - file: estudo_3/decibeis/relatorio_decibeis.md
+        - file: estudo_3/fir/relatorio_fir.md
+        - file: estudo_3/iir/relatorio_iir.md
+        - file: estudo_3/comparacao_fir_iir/relatorio_comparacao_fir_iir.md
+        - file: estudo_3/polos_zeros/relatorio_polos_zeros.md
+        - file: estudo_3/estabilidade_iir/relatorio_estabilidade_iir.md
+        - file: estudo_3/fase_atraso/relatorio_fase_atraso.md
+        - file: estudo_3/atraso_grupo/relatorio_atraso_grupo.md
+        - file: estudo_3/projeto_fir/relatorio_projeto_fir.md
+        - file: estudo_3/projeto_iir/relatorio_projeto_iir.md
+        - file: estudo_3/comparacao_metodos/relatorio_comparacao_metodos.md
+        - file: estudo_3/aplicacao_filtros/relatorio_aplicacao_filtros.md
+        - file: estudo_3/mini_projeto/relatorio_mini_projeto.md
+        - file: estudo_3/relatorio_estudo_3.md
+        - file: estudo_3/referencias/relatorio_referencias.md
 
   settings:
     myst_to_tex:

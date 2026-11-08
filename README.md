@@ -2,7 +2,7 @@
 
 Repositório dos estudos, relatórios e simulações da disciplina de Processamento Digital de Sinais do IFPB. O conteúdo é organizado como um livro digital com Jupyter Book e MyST, e as simulações são desenvolvidas em Python.
 
-Para consultar o conteúdo, acesse a [apresentação do Estudo 1](estudo_1/README.md) ou o [índice dos tópicos](estudo_1/index.md).
+Para consultar o conteúdo, acesse as apresentações do [Estudo 1](estudo_1/README.md), [Estudo 2](estudo_2/README.md) e [Estudo 3](estudo_3/README.md). Os estudos posteriores seguem a organização do Estudo 1 e os roteiros em `docs/`.
 
 ## Organização do projeto
 
@@ -18,7 +18,11 @@ estudo_1/
 │   ├── relatorio_<topico>.md      Texto do capítulo
 │   └── simulacao/                Notebooks e resultados
 └── referencias/                  Referências bibliográficas
-.github/workflows/deploy.yml      Geração do site e do PDF
+estudo_2/                        Transformadas: 18 tópicos e mini projeto
+estudo_3/                        Filtros digitais: 14 tópicos e mini projeto
+docs/                            Guias das três partes
+scripts/executar_notebooks.py     Execução reproduzível dos estudos 2 e 3
+.github/workflows/deploy.yml      Geração do site e dos três PDFs
 ```
 
 ## Preparar o ambiente
@@ -53,7 +57,7 @@ O site gerado fica em `_build/html/`. Para exportar o relatório completo do Est
 jupyter-book build estudo_1/relatorio_estudo_1.md --pdf --force --ci --output _build/exports/estudo_1.pdf
 ```
 
-O workflow de publicação executa essas etapas a cada envio para a branch `main`, copia o PDF para a pasta `pdfs/` do site e publica o resultado no GitHub Pages. O link de download presente no estudo aponta para esse PDF publicado.
+O workflow de publicação executa essas etapas a cada envio para a branch `main`, copia os três PDFs para a pasta `pdfs/` do site e publica o resultado no GitHub Pages. O link de download presente no estudo aponta para esse PDF publicado.
 
 ## Adicionar um novo tópico ou estudo
 
@@ -80,3 +84,20 @@ Exemplo de inclusão de um capítulo no relatório completo:
 ````
 
 Os caminhos das inclusões são relativos ao arquivo Markdown que as contém. As referências bibliográficas devem identificar as fontes consultadas e, para materiais on-line, informar o link e a data de acesso.
+
+## Reexecutar os estudos 2 e 3
+
+```bash
+python scripts/executar_notebooks.py
+```
+
+Os notebooks são independentes e usam o kernel do ambiente ativo. A execução salva gráficos e tabelas nos próprios arquivos. Os projetos utilizam sinais sintéticos com parâmetros e sementes explícitos. Para exportar os estudos posteriores, use os comandos abaixo.
+
+Os Estudos 2 e 3 incluem configuração de PDF própria para acomodar as saídas dos notebooks:
+
+```bash
+jupyter-book build estudo_2/relatorio_estudo_2.md --pdf --ci
+jupyter-book build estudo_3/relatorio_estudo_3.md --pdf --ci
+```
+
+Os arquivos são salvos em `output/pdf/`. O template local em `templates/relatorio/` utiliza fontes DejaVu; o pacote `texlive-lang-portuguese` habilita a hifenização em português quando disponível.
