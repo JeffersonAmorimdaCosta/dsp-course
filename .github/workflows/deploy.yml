@@ -49,6 +49,8 @@ jobs:
             texlive-xetex \
             texlive-fonts-recommended \
             texlive-latex-extra \
+            texlive-lang-portuguese \
+            fonts-dejavu-core \
             latexmk
 
       # --------------------------------------------------------
@@ -58,10 +60,10 @@ jobs:
       - name: Build study PDFs
         run: |
           jupyter-book build estudo_1/relatorio_estudo_1.md \
-            --pdf \
-            --force \
-            --ci \
-            --output _build/exports/estudo_1.pdf
+            --pdf --force --ci --output _build/exports/estudo_1.pdf
+          for estudo in 2 3; do
+            jupyter-book build "estudo_${estudo}/relatorio_estudo_${estudo}.md" --pdf --ci
+          done
 
       # --------------------------------------------------------
       # HTML
@@ -81,7 +83,7 @@ jobs:
       - name: Copy study PDFs
         run: |
           mkdir -p _build/html/pdfs
-          cp _build/exports/estudo_1.pdf _build/html/pdfs/
+          cp _build/exports/estudo_1.pdf output/pdf/estudo_{2,3}.pdf _build/html/pdfs/
 
       # --------------------------------------------------------
       # GitHub Pages

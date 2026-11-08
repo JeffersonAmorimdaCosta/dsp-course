@@ -17,4 +17,6 @@ Este t처pico apresenta uma vis찾o geral, objetivos, percursos, projetos e relat�
   - Objetivos, percurso, projeto e relat처rio do estudo.
 * - [Estudo 2](estudo_2/README.md)
   - Objetivos, percurso, projeto e relat처rio do estudo.
+* - [Estudo 3](estudo_3/README.md)
+  - Objetivos, percurso, projeto e relat처rio do estudo.
 ```

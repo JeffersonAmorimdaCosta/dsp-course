@@ -253,7 +253,7 @@ A Figura 1 apresenta a representação simultânea do sinal contínuo e das amos
 
 **Figura 1 — Representação do sinal contínuo e do sinal amostrado**
 
-::::{figure} ./simulacao/grafico_sinal.png
+::::{figure} /estudo_1/sinais_discretos/simulacao/grafico_sinal.png
 :name: fig-sinal-continuo-amostrado
 :alt: Sinal contínuo e sinal amostrado
 :align: center
